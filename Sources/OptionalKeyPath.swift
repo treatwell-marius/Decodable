@@ -20,7 +20,7 @@ public struct OptionalKey {
 
 extension OptionalKey: CustomStringConvertible {
     public var description: String {
-        return key + (isRequired ? "" : "?")
+        return "\(key)\(isRequired ? "" : "?")"
     }
 }
 
